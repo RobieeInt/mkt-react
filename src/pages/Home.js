@@ -7,14 +7,18 @@ import JustArrived from '../parts/Home/JustArrived';
 import Sitemap from '../parts/Sitemap';
 import Footer from '../parts/Footer';
 
+import useScrollAnchor from '../helpers/hook/useScrollAnchor';
+import useModalDom from '../helpers/hook/useModalDom';
+
 export default function Home(props) {
+	useScrollAnchor();
+	useModalDom();
 	return (
 		<>
 			<Header theme="white" position="absolute" />
 			<Hero />
 			<Browse />
 			<JustArrived />
-			{/* <Clients /> */}
 			<Sitemap />
 			<Footer />
 		</>
