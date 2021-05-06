@@ -1,14 +1,11 @@
-export default function fetchData({ url, method = 'GET', host = process.env.REACT_APP_API }) {
+export default function fetchData({ url, method = 'GET', host = process.env.REACT_APP_API, body }) {
 	return fetch(`${host}${url}`, {
 		method,
 		mode: 'cors',
-		header: {
-			'Content-Type': 'application/json',
-			'Access-Control-Allow-Origin': '*',
-			'Access-Control-Allow-Credentials': true
-		}
+		headers: { 'Content-Type': 'application/json' },
+		body
 	}).then(async (response) => {
-		const jsonResponse = await response.json();
+		const jsonResponse = response.status === 200 ? await response.json() : response;
 		if (response.ok) return jsonResponse;
 
 		throw new Error(JSON.stringify(jsonResponse));

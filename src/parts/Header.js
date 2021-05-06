@@ -99,7 +99,7 @@ export default function Header({ theme, position }) {
 								</button>
 							</li>
 							<li className="ml-6">
-								<a
+								<Link
 									id="header-cart"
 									className={[
 										'cart flex items-center justify-center w-8 h-8',
@@ -107,10 +107,10 @@ export default function Header({ theme, position }) {
 										state.cart && Object.keys(state.cart).length > 0 ? 'cart-filled' : '',
 										isCartChange ? 'animate-bounce' : ''
 									].join(' ')}
-									href="cart.html"
+									to="/cart"
 								>
 									<IconCart />
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

@@ -100,11 +100,11 @@ function LoadingSuggestion() {
 export default function Home() {
 	const { idp } = useParams();
 
-	const { data, status, error, run, isLoading } = useAsync();
+	const { data, run, isLoading } = useAsync();
 
 	useEffect(() => {
 		run(fetch({ url: `/api/products/${idp}` }));
-	}, [run]);
+	}, [run, idp]);
 
 	return (
 		<>

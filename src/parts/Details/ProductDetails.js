@@ -5,9 +5,10 @@ import { useGlobalContext } from '../../helpers/hook/useGlobalContext';
 export default function ProductDetails({ data }) {
 	const [slider, setSlider] = useState(() => data?.imgUrls?.[0] || '');
 
-	const { dispatch } = useGlobalContext();
+	const { state, dispatch } = useGlobalContext();
 
-	console.log(dispatch);
+	console.log(state, dispatch);
+	console.log('details: ', data);
 	return (
 		<section className="container mx-auto">
 			<div className="flex flex-wrap my-4 md:my-12">
