@@ -2,81 +2,81 @@ import React from 'react';
 
 export default function ProductDetails() {
 	return (
-		<section class="container mx-auto">
-			<div class="flex flex-wrap my-4 md:my-12">
-				<div class="w-full md:hidden px-4">
-					<h2 class="text-5xl font-semibold">Chair Thatty</h2>
-					<span class="text-xl">IDR 12.000.000</span>
+		<section className="container mx-auto">
+			<div className="flex flex-wrap my-4 md:my-12">
+				<div className="w-full md:hidden px-4">
+					<h2 className="text-5xl font-semibold">Chair Thatty</h2>
+					<span className="text-xl">IDR 12.000.000</span>
 				</div>
-				<div class="flex-1">
-					<div class="slider">
-						<div class="thumbnail">
-							<div class="px-2">
-								<div class="item selected" data-img="/images/content/1.jpg">
+				<div className="flex-1">
+					<div className="slider">
+						<div className="thumbnail">
+							<div className="px-2">
+								<div className="item selected" data-img="/images/content/1.jpg">
 									<img
 										src="/images/content/1.jpg"
 										alt="front"
-										class="object-cover w-full h-full rounded-lg"
+										className="object-cover w-full h-full rounded-lg"
 									/>
 								</div>
 							</div>
-							<div class="px-2">
-								<div class="item" data-img="/images/content/2.jpg">
+							<div className="px-2">
+								<div className="item" data-img="/images/content/2.jpg">
 									<img
 										src="/images/content/2.jpg"
 										alt="back"
-										class="object-cover w-full h-full rounded-lg"
+										className="object-cover w-full h-full rounded-lg"
 									/>
 								</div>
 							</div>
-							<div class="px-2">
-								<div class="item" data-img="/images/content/3.jpg">
+							<div className="px-2">
+								<div className="item" data-img="/images/content/3.jpg">
 									<img
 										src="/images/content/3.jpg"
 										alt="rear"
-										class="object-cover w-full h-full rounded-lg"
+										className="object-cover w-full h-full rounded-lg"
 									/>
 								</div>
 							</div>
-							<div class="px-2">
-								<div class="item" data-img="/images/content/4.jpg">
+							<div className="px-2">
+								<div className="item" data-img="/images/content/4.jpg">
 									<img
 										src="/images/content/4.jpg"
 										alt="side"
-										class="object-cover w-full h-full rounded-lg"
+										className="object-cover w-full h-full rounded-lg"
 									/>
 								</div>
 							</div>
-							<div class="px-2">
-								<div class="item" data-img="/images/content/5.jpg">
+							<div className="px-2">
+								<div className="item" data-img="/images/content/5.jpg">
 									<img
 										src="/images/content/5.jpg"
 										alt="top"
-										class="object-cover w-full h-full rounded-lg"
+										className="object-cover w-full h-full rounded-lg"
 									/>
 								</div>
 							</div>
 						</div>
-						<div class="preview">
-							<div class="item rounded-lg h-full overflow-hidden">
+						<div className="preview">
+							<div className="item rounded-lg h-full overflow-hidden">
 								<img
 									src="/images/content/1.jpg"
 									alt="front"
-									class="object-cover w-full h-full rounded-lg"
+									className="object-cover w-full h-full rounded-lg"
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="flex-1 px-4 md:p-6">
-					<h2 class="text-5xl font-semibold">Chair Thatty</h2>
-					<p class="text-xl">IDR 12.000.000</p>
+				<div className="flex-1 px-4 md:p-6">
+					<h2 className="text-5xl font-semibold">Chair Thatty</h2>
+					<p className="text-xl">IDR 12.000.000</p>
 
 					<a
 						href="cart.html"
-						class="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"
+						className="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"
 					>
-						<svg class="fill-current mr-3" width="26" height="24" viewBox="0 0 26 24">
+						<svg className="fill-current mr-3" width="26" height="24" viewBox="0 0 26 24">
 							<path d="M10.8754 18.7312C9.61762 18.7312 8.59436 19.7115 8.59436 20.9164C8.59436 22.1214 9.61762 23.1017 10.8754 23.1017C12.1331 23.1017 13.1564 22.1214 13.1564 20.9164C13.1563 19.7115 12.1331 18.7312 10.8754 18.7312ZM10.8754 21.8814C10.3199 21.8814 9.86796 21.4485 9.86796 20.9163C9.86796 20.3842 10.3199 19.9512 10.8754 19.9512C11.4308 19.9512 11.8828 20.3842 11.8828 20.9163C11.8828 21.4486 11.4308 21.8814 10.8754 21.8814Z" />
 							<path d="M18.8764 18.7312C17.6186 18.7312 16.5953 19.7115 16.5953 20.9164C16.5953 22.1214 17.6186 23.1017 18.8764 23.1017C20.1342 23.1017 21.1575 22.1214 21.1575 20.9164C21.1574 19.7115 20.1341 18.7312 18.8764 18.7312ZM18.8764 21.8814C18.3209 21.8814 17.869 21.4485 17.869 20.9163C17.869 20.3842 18.3209 19.9512 18.8764 19.9512C19.4319 19.9512 19.8838 20.3842 19.8838 20.9163C19.8838 21.4486 19.4319 21.8814 18.8764 21.8814Z" />
 							<path d="M19.438 7.2262H10.3122C9.96051 7.2262 9.67542 7.49932 9.67542 7.83626C9.67542 8.1732 9.96056 8.44632 10.3122 8.44632H19.438C19.7897 8.44632 20.0748 8.1732 20.0748 7.83626C20.0748 7.49927 19.7897 7.2262 19.438 7.2262Z" />
@@ -85,14 +85,14 @@ export default function ProductDetails() {
 						</svg>
 						Add to Cart
 					</a>
-					<hr class="my-8" />
+					<hr className="my-8" />
 
-					<h6 class="text-xl font-semibold mb-4">About the product</h6>
-					<p class="text-xl leading-7 mb-6">
+					<h6 className="text-xl font-semibold mb-4">About the product</h6>
+					<p className="text-xl leading-7 mb-6">
 						Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated
 						quality in the detail, Jetty has been influenced by timeless 1950s style.
 					</p>
-					<p class="text-xl leading-7">
+					<p className="text-xl leading-7">
 						Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work
 						today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.
 					</p>
