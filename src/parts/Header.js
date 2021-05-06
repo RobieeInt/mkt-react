@@ -4,7 +4,7 @@ import { useGlobalContext } from '../helpers/hook/useGlobalContext';
 import { ReactComponent as IconCart } from '../assets/images/content/icon-cart.svg';
 
 export default function Header({ theme, position }) {
-	const [toggleMainMenu, setToggleMainMenu] = useState(false);
+	// const [toggleMainMenu, setToggleMainMenu] = useState(false);
 	const [isCartChange, setCartChange] = useState(false);
 	const { state } = useGlobalContext();
 

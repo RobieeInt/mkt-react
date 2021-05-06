@@ -9,7 +9,7 @@ import { useGlobalContext } from '../../helpers/hook/useGlobalContext';
 export default function ShippingDetails() {
 	const history = useHistory();
 	const { data, run, isLoading } = useAsync();
-	const { state, dispatch } = useGlobalContext();
+	const { dispatch } = useGlobalContext();
 
 	const { state: payload, fnUpdateState } = useForm({
 		completeName: '',
